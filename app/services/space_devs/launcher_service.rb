@@ -42,8 +42,7 @@ module SpaceDevs
             image: launcher['image'],
             webcast_live: launcher['webcast_live'],
             infographic: launcher['infographic'],
-            program: launcher['program'],
-            imported_t: DateTime.now
+            program: launcher['program']
           )
           @launcher_field.save
 
