@@ -21,9 +21,15 @@ default: &default
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
+#development:
+#  <<: *default
+#  database: FutureSpace_API_development
 development:
   <<: *default
   database: FutureSpace_API_development
+  min_messages: warning
+  username: postgres
+  password: postgres
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
