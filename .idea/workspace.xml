@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05120584-eca9-4d67-a926-ea75d911f54d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test/models/launcher_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/launcher.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/launcher.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/space_devs/launcher_service.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/space_devs/launcher_service.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/factories/launchers.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/factories/launchers.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/models/launcher_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/models/launcher_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/launchers_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/launchers_controller.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +27,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/RubymineProjects/contabilidade" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/config/initializers" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -41,6 +35,9 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/config/initializers" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/services/space_devs" />
       <recent name="$PROJECT_DIR$/app/services" />
@@ -161,7 +158,7 @@
       <workItem from="1656636598255" duration="414000" />
       <workItem from="1656637211472" duration="1195000" />
       <workItem from="1656939359269" duration="26400000" />
-      <workItem from="1657823806985" duration="80162000" />
+      <workItem from="1657823806985" duration="93715000" />
     </task>
     <servers />
   </component>

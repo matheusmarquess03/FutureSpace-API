@@ -1,3 +1,4 @@
 class RocketSerializer < ActiveModel::Serializer
-  attributes :id
+  attributes :id, :configurations
+  has_many :configurations
 end

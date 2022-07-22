@@ -1,19 +1,22 @@
 class LaunchersController < ApplicationController
   before_action :set_launcher, only: [:show, :update, :destroy]
 
-  # GET /launchers
-  # GET /launchers.json
   def index
-    @launchers = Launcher.all
+    launchers = Launcher.all.pagina(params[:page]).per(per)
+    render json: {
+      registros: launchers.total_count,
+      resultado: ActiveModelSerializers::SerializableResource.new(launchers)
+    }
   end
 
-  # GET /launchers/1
-  # GET /launchers/1.json
   def show
+    if @launcher.present?
+      render json: @launcher
+    else
+      render json: @launcher.errors, status: :unprocessable_entity
+    end
   end
 
-  # POST /launchers
-  # POST /launchers.json
   def create
     @launcher = Launcher.new(launcher_params)
 
@@ -24,30 +27,28 @@ class LaunchersController < ApplicationController
     end
   end
 
-  # PATCH/PUT /launchers/1
-  # PATCH/PUT /launchers/1.json
   def update
-    if @launcher.update(launcher_params)
-      render :show, status: :ok, location: @launcher
+    if @launcher.update_attributes(launcher_params)
+      render json: @launcher.reload
     else
-      render json: @launcher.errors, status: :unprocessable_entity
+      render json: { error: @launcher.errors }, status: :unprocessable_entity
     end
   end
 
-  # DELETE /launchers/1
-  # DELETE /launchers/1.json
   def destroy
     @launcher.destroy
+
+    head :no_content
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_launcher
-      @launcher = Launcher.find(params[:id])
-    end
+  def set_launcher
+    @launcher = Launcher.find(params[:id])
+  end
 
-    # Only allow a list of trusted parameters through.
-    def launcher_params
-      params.fetch(:launcher, {})
-    end
+  def launcher_params
+    params.permit(:id, :external_id, :url, :launch_library_id, :slug, :name, :net, :window_end,
+                                     :window_start, :inhold, :tbdtime, :tbddate, :probability, :holdreason, :failreason,
+                                     :hashtag, :map_image, :total_launch_count, :webcast_live, :image, :infographic, :program)
+  end
 end
