@@ -21,7 +21,7 @@ class LaunchersController < ApplicationController
     @launcher = Launcher.new(launcher_params)
 
     if @launcher.save
-      render :show, status: :created, location: @launcher
+      render json: @launcher, status: :created, location: @launcher
     else
       render json: @launcher.errors, status: :unprocessable_entity
     end
