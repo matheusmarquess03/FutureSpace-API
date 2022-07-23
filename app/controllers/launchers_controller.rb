@@ -1,4 +1,5 @@
 class LaunchersController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_launcher, only: [:show, :update, :destroy]
 
   def index
