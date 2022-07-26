@@ -31,6 +31,13 @@ rescue ActiveRecord::PendingMigrationError => e
   exit 1
 end
 RSpec.configure do |config|
+
+  # http://stackoverflow.com/a/38422513/2788008
+  config.include Devise::Test::ControllerHelpers, type: :controller
+  # https://github.com/plataformatec/devise/wiki/How-To:-Stub-authentication-in-controller-specs
+  config.include ControllerHelpers, type: :controller
+  # https://github.com/plataformatec/devise/wiki/How-To:-Test-with-Capybara
+  config.include Warden::Test::Helpers
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
 

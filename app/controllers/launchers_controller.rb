@@ -29,7 +29,7 @@ class LaunchersController < ApplicationController
   end
 
   def update
-    if @launcher.update_attributes(launcher_params)
+    if @launcher.update(launcher_params)
       render json: @launcher.reload
     else
       render json: { error: @launcher.errors }, status: :unprocessable_entity

@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05120584-eca9-4d67-a926-ea75d911f54d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/spec/factories/user.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/support/controller_helpers.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/space_devs/launcher_service.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/space_devs/launcher_service.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/launchers_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/launchers_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/controllers/launchers_controller_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/controllers/launchers_controller_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/rails_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/rails_helper.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +32,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/config/initializers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/spec/support" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -37,6 +41,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/spec/support" />
       <recent name="$PROJECT_DIR$/config/initializers" />
     </key>
     <key name="MoveFile.RECENT_KEYS">

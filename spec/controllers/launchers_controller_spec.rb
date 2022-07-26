@@ -1,6 +1,9 @@
 require 'rails_helper'
 
 RSpec.describe LaunchersController, type: :controller do
+  let!(:user) { create :user }
+  before { sign_in }
+
   describe 'GET #index' do
     let!(:launcher) { create :launcher }
 
