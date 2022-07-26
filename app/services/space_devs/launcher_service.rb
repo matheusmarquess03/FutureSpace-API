@@ -1,7 +1,7 @@
 module SpaceDevs
   class LauncherService
     def initialize()
-      @url = "https://ll.thespacedevs.com/2.0.0/launch/?limit=2000&offset=6689"
+      @url = "https://ll.thespacedevs.com/2.0.0/launch/?limit=200&offset=20"
     end
 
     def call

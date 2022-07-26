@@ -7,6 +7,6 @@ class ApplicationController < ActionController::API
   end
 
   def index
-    render json: { message: 'Back-end Challenge 2021 🏅 - Space Flight News' }
+    render json: { message: 'REST Back-end Challenge 20201209 Running' }
   end
 end
