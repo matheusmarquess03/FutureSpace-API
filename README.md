@@ -1,24 +1,47 @@
-# README
+# FUTURE SPACE API :rocket:
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The Challenge Future Space API is intended to test the developer's knowledge of the developer's backend with Ruby on Rails.
+A routine was developed to import Project data: https://ll.thespacedevs.com/2.0.0/launch/ and a REST API was also created with a CRUD using the imported data.
 
-Things you may want to cover:
+## Technical Description
 
-* Ruby version
+  * Ruby version:  2.7.1
+  * Rails version: 6.0.3
 
-* System dependencies
+## Settings
 
-* Configuration
+## :information_source: How To Use
 
-* Database creation
+```shell
+bundle install
+bundle exec rails db:create
+bundle exec rails db:migrate
+run it: rails s
+```
 
-* Database initialization
+## :information_source: Activate cron
 
-* How to run the test suite
+After running `bundle install` and checking if the cron library is installed, run:
 
-* Services (job queues, cache servers, search engines, etc.)
+```shell
+bundle exec whenever --update-crontab;
+```
+Depois, para verificar, basta usar o comando: 
 
-* Deployment instructions
+```shell
+crontab -l;
+```
 
-* ...
+## :information_source: Use How To Run Tests
+
+```shell
+rspec
+```
+ou
+
+```shell
+ rspec spec/path_to_file
+```
+
+> This is a challenge by (Coodesh)[https://coodesh.com/]
+
