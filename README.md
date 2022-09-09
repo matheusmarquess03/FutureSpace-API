@@ -43,5 +43,4 @@ ou
  rspec spec/path_to_file
 ```
 
-> This is a challenge by (Coodesh)[https://coodesh.com/]
 
